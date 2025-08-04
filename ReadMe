@@ -1,0 +1,43 @@
+
+# **Assignment 6: Medians and Order Statistics & Elementary Data Structures
+
+## **Overview**  
+The core focus of this project is on comparing the efficiency of two k-th selection algorithms—Median of Medians and Randomized Quickselect—and demonstrating foundational data structures like Stack, Queue, and Linked List. The script includes performance benchmarks to highlight the time complexity of each approach across multiple input sizes.
+
+The goal is to analyze their performance and compare execution times under different conditions.  
+
+---
+
+## **How to Run the Code**  
+
+### **Prerequisites**  
+Ensure you have **Python 3.12** (or later) installed on your system.  
+
+### **Running the Programs**  
+1. Open a terminal or command prompt.  
+2. Navigate to the project directory:  
+   ```bash
+   cd "Assignment 5"
+   ```
+3. Run the **medainOfMedians**:  
+   ```bash
+   python medainOfMedians.py
+   ```
+4. Run the **QuickSelect**:  
+   ```bash
+   python quickSelect.py
+   ```
+
+---
+
+## **Summary of Findings**  
+Median of Medians:
+Deterministic approach with worst-case linear time complexity 
+Guarantees stability and efficiency even for unfavorable input distributions.
+Performance is consistent but comparatively slower than randomized methods for large datasets.
+Randomized Quickselect:
+Relies on random pivot selection for partitioning.
+Has average-case linear time complexity, but can degrade to in worst-case scenarios.
+Typically faster in practice due to simplicity and lower overhead.
+### **Conclusion**  
+Quickselect outperforms in speed for typical inputs, but Median of Medians is a safer choice when worst-case behavior must be avoided—e.g., in real-time or mission-critical systems.
